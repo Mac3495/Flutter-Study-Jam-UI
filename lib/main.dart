@@ -136,7 +136,6 @@ class MyApp extends StatelessWidget {
                       )
                   ),
                 ),
-                //Esto es un contenedor y sirve para contener
                 Container(
                   margin: EdgeInsets.all(8.0),
                   child: Row(
@@ -150,7 +149,11 @@ class MyApp extends StatelessWidget {
                     ],
                   ),
                 ),
+                /*El widget Image nos permite insertar imagenes en nuestras aplicaicones
+                tanto de manera local como desde Internet*/
                 Image(
+                  /*Para insertar una imagen de manera local debemos declarar la
+                  * imagen como un recurso en el archivo pubspec.yaml*/
                   image: AssetImage('assets/images/perrito.jpg'),
                 ),
                 Image(
@@ -164,6 +167,9 @@ class MyApp extends StatelessWidget {
                   width: 120.0,
                   height: 120.0,
                   margin: EdgeInsets.only(top: 20.0),
+                  /*Podemos darle un estilo personalizado a nuestros contenedores
+                   con el atributo decoration en el cual podemos darle un borde
+                   un color de fondo, redondear las esquinas, etc.*/
                   decoration: BoxDecoration(
                     border: Border.all(color: Colors.black, width: 5.0),
                     color: Colors.red,
